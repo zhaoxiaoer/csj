@@ -19,4 +19,13 @@
   	<url-pattern>/c2/helloworld</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>ServletTemplate</servlet-name>
+  	<servlet-class>c3.ServletTemplate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletTemplate</servlet-name>
+  	<url-pattern>/c3/servlettemplate</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
