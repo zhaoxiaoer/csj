@@ -28,4 +28,13 @@
   	<url-pattern>/c3/servlettemplate</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>HelloServlet3</servlet-name>
+  	<servlet-class>c3.HelloServlet3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HelloServlet3</servlet-name>
+  	<url-pattern>/c3/helloservlet3</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

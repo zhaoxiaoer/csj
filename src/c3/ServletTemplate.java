@@ -11,18 +11,16 @@ import javax.servlet.http.HttpServletResponse;
 public class ServletTemplate extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) 
 			throws ServletException, IOException{
-		
-		// Use "request" to read incoming HTTP headers
-		// (e.g., cookies) and query data from HTML forms.
-		System.out.println(req);
-		System.out.println("user-Agent: " + req.getHeader("user-Agent"));
-		
-		// Use "response" to specify the HTTP response status
-		// code and headers (e.g., the content type, cookies).
-		
+		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
 		// Use "out" to send content to browser
-		
-		System.out.println("11111");
+		out.println("<!DOCTYPE html>\n" + 
+				"<html>\n" + 
+				"<head>\n" + 
+				"<title>HelloWorld</title>\n" + 
+				"</head>\n" + 
+				"<body bgcolor=\"#FDF5E6\">\n" + 
+				"<p>hello world 111 222</p>\n" + 
+				"</body>");
 	}
 }
