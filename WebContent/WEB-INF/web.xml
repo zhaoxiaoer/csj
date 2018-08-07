@@ -37,4 +37,26 @@
   	<url-pattern>/c3/helloservlet3</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>LotteryNumbers</servlet-name>
+  	<servlet-class>c3.LotteryNumbers</servlet-class>
+  	<init-param>
+  		<param-name>address</param-name>
+  		<param-value>127.0.0.1:8080</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LotteryNumbers</servlet-name>
+  	<url-pattern>/c3/lotterynumbers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UserIDs</servlet-name>
+  	<servlet-class>c3.UserIDs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserIDs</servlet-name>
+  	<url-pattern>/c3/userids</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
