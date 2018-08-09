@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"html"
 	"net/http"
 )
 
@@ -23,4 +24,6 @@ func main() {
 	}
 	defer resp.Body.Close()
 	fmt.Printf("%#v\n", resp)
+
+	fmt.Printf("%s\n", html.EscapeString("<i>zhaoxiaoer</i>"))
 }

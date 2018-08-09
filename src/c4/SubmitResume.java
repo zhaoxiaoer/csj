@@ -49,6 +49,7 @@ public class SubmitResume extends HttpServlet {
 		bgColor = replaceIfMissing(bgColor, "white");
 		
 		String name = req.getParameter("name");
+//		name = ServletUtilities.filter(name);
 		name = replaceIfMissing(name, "Lou Zer");
 		String title = req.getParameter("title");
 		title = replaceIfMissing(title, "Loser");
