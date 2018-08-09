@@ -14,6 +14,17 @@ public class ServletTemplate extends HttpServlet {
 		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
 		// Use "out" to send content to browser
+		
+		long id = Thread.currentThread().getId();
+		System.out.println("id: " + id);
+		
+		try {
+			Thread.currentThread().sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		out.println("<!DOCTYPE html>\n" + 
 				"<html>\n" + 
 				"<head>\n" + 

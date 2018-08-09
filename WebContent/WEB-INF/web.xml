@@ -59,4 +59,31 @@
   	<url-pattern>/c3/userids</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>ThreeParams</servlet-name>
+  	<servlet-class>c4.ThreeParams</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ThreeParams</servlet-name>
+  	<url-pattern>/c4/threeparams</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ShowParameters</servlet-name>
+  	<servlet-class>c4.ShowParameters</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowParameters</servlet-name>
+  	<url-pattern>/c4/showparameters</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SubmitResume</servlet-name>
+  	<servlet-class>c4.SubmitResume</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SubmitResume</servlet-name>
+  	<url-pattern>/c4/submitresume</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

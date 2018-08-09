@@ -23,8 +23,7 @@ public class UserIDs extends HttpServlet {
 		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
 		String title = "Your ID";
-		out.println(ServletUtilities.DOCTYPE +
-				ServletUtilities.headWithTitle(title) +
+		out.println(ServletUtilities.headWithTitle(title) +
 				"<body bgcolor=\"#FDF5E6\">\n" +
 				"<h1 align=center>" + title + "</h1>\n");
 		synchronized(this) {

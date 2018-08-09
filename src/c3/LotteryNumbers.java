@@ -44,8 +44,7 @@ public class LotteryNumbers extends HttpServlet {
 		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
 		String title = "Your Lottery Numbers";
-		out.println(ServletUtilities.DOCTYPE +
-				ServletUtilities.headWithTitle(title) +
+		out.println(ServletUtilities.headWithTitle(title) +
 				"<body bgcolor=\"#FDF5E6\"\n" +
 				"<h1 align=center>" + title + "</h1><br />\n" +
 				"<b>Based upon extensive research of " +

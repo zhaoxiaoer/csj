@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Free Resume Posting</title>
+</head>
+<body>
+<h1>hot-computer-jobs.com</h1>
+<p class="larger">
+To use our <i>free</i> resume-posting service, simply fill
+out the brief summary of your skills below. Use "Preview"
+to check the results, then press "Submit" once it is
+ready. Your mini-resume will appear online within 24 hours.</p>
+<hr>
+<form action="/csj/c4/submitresume" method="post">
+	<dl>
+		<dt><b>First, give some general information about the look of your resume:</b>
+		<dd>Heading font: <input type="text" name="headingFont" value="default">
+		<dd>Heading text size: <input type="text" name="headingSize" value=32>
+		<dd>Body font: <input type="text" name="bodyFont" value="default">
+		<dd>Body text size: <input type="text" name="bodySize" value=18>
+		<dd>Foreground color: <input type="text" name="fgColor" value="black">
+		<dd>Background color: <input type="text" name="bgColor" value="white">
+		
+		<dt><b>Next, give some general information about yourself:</b>
+		<dd>Name: <input type="text" name="name">
+		<dd>Current or most recent title: <input type="text" name="title">
+		<dd>Email address: <input type="text" name="email">
+		<dd>Programming Languages: <input type="text" name="languages">
+		
+		<dt><b>Finally, enter a brief summary of your skills and 
+		experience:</b> (use &lt;P&gt; to separate paragraphs.
+		Other HTML markup is also permitted.)
+		<dd><textarea name="skills" rows=10 cols=60 wrap="soft"></textarea>
+	</dl>
+	<center>
+		<input type="submit" name="previewButton" value="Preview">
+		<input type="submit" name="submitButton" value="Submit">
+	</center>
+</form>
+<hr>
+<p class="tiny">See our privacy policy<a href="we-will-spam-you.html">here</a>.</p>
+</body>
+</html>
