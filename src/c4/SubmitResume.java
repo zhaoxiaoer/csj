@@ -28,13 +28,13 @@ public class SubmitResume extends HttpServlet {
 		}
 	}
 	
-//	public long getLastModified(HttpServletRequest req) {
-//		return -1;
-//	}
-//	
-//	public void destroy() {
-//		
-//	}
+	public long getLastModified(HttpServletRequest req) {
+		return -1;
+	}
+	
+	public void destroy() {
+		
+	}
 	
 	private void showPreview(HttpServletRequest req, PrintWriter out) {
 		String headingFont = req.getParameter("headingFont");
