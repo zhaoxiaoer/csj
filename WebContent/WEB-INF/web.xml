@@ -86,4 +86,13 @@
   	<url-pattern>/c4/submitresume</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>BadCodeServlet</servlet-name>
+  	<servlet-class>c4.BadCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BadCodeServlet</servlet-name>
+  	<url-pattern>/c4/badcodeservlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

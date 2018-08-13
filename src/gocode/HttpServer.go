@@ -12,6 +12,7 @@ func main() {
 	files := http.FileServer(http.Dir("../../WebContent"))
 	mux.Handle("/csj/", http.StripPrefix("/csj/", files))
 	mux.Handle("/csj/c4/submitresume", &c4.SubmitResume{})
+	mux.Handle("/csj/c4/badcodeservlet", &c4.BadCode{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",

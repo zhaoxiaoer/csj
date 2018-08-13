@@ -17,13 +17,13 @@ func (sr *SubmitResume) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	var err error
 	switch r.Method {
 	case "GET":
-		err = handleGet(w, r)
+		err = sr.handleGet(w, r)
 	case "POST":
-		err = handlePost(w, r)
+		err = sr.handlePost(w, r)
 	case "PUT":
-		err = handlePut(w, r)
+		err = sr.handlePut(w, r)
 	case "DELETE":
-		err = handleDelete(w, r)
+		err = sr.handleDelete(w, r)
 	}
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -31,13 +31,13 @@ func (sr *SubmitResume) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func handleGet(w http.ResponseWriter, r *http.Request) (err error) {
-	w.Write([]byte("111"))
+func (sr *SubmitResume) handleGet(w http.ResponseWriter, r *http.Request) (err error) {
+	w.Write([]byte("get"))
 
 	return
 }
 
-func handlePost(w http.ResponseWriter, r *http.Request) (err error) {
+func (sr *SubmitResume) handlePost(w http.ResponseWriter, r *http.Request) (err error) {
 	r.ParseForm()
 
 	if r.PostForm.Get("previewButton") != "" {
@@ -50,13 +50,13 @@ func handlePost(w http.ResponseWriter, r *http.Request) (err error) {
 	return
 }
 
-func handlePut(w http.ResponseWriter, r *http.Request) (err error) {
+func (sr *SubmitResume) handlePut(w http.ResponseWriter, r *http.Request) (err error) {
 	w.Write([]byte("put"))
 
 	return
 }
 
-func handleDelete(w http.ResponseWriter, r *http.Request) (err error) {
+func (sr *SubmitResume) handleDelete(w http.ResponseWriter, r *http.Request) (err error) {
 	w.Write([]byte("delete"))
 
 	return
