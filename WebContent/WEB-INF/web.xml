@@ -95,4 +95,13 @@
   	<url-pattern>/c4/badcodeservlet</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>SubmitInsuranceInfo</servlet-name>
+  	<servlet-class>c4.SubmitInsuranceInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SubmitInsuranceInfo</servlet-name>
+  	<url-pattern>/c4/submitinsuranceinfo</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

@@ -46,7 +46,8 @@ func (bc *BadCode) handleGet(w http.ResponseWriter, r *http.Request) (err error)
 }
 
 func (bc *BadCode) handlePost(w http.ResponseWriter, r *http.Request) (err error) {
-	w.Write([]byte("post"))
+	//	w.Write([]byte("post"))
+	err = bc.handleGet(w, r)
 
 	return
 }

@@ -32,6 +32,11 @@ public class BadCodeServlet extends HttpServlet {
 				"</body></html>");
 	}
 	
+	public void doPost(HttpServletRequest req, HttpServletResponse res)
+			throws ServletException, IOException {
+		doGet(req, res);
+	}
+	
 //	public long getLastModified(HttpServletRequest req) {
 //		return -1;
 //	}
