@@ -104,4 +104,13 @@
   	<url-pattern>/c4/submitinsuranceinfo</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>BidServlet</servlet-name>
+  	<servlet-class>c4.BidServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BidServlet</servlet-name>
+  	<url-pattern>/c4/bidservlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
