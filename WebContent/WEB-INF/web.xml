@@ -122,4 +122,13 @@
   	<url-pattern>/c5/showrequestheaders</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>LongServlet</servlet-name>
+  	<servlet-class>c5.LongServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LongServlet</servlet-name>
+  	<url-pattern>/c5/longservlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
