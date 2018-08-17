@@ -113,4 +113,13 @@
   	<url-pattern>/c4/bidservlet</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>ShowRequestHeaders</servlet-name>
+  	<servlet-class>c5.ShowRequestHeaders</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowRequestHeaders</servlet-name>
+  	<url-pattern>/c5/showrequestheaders</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

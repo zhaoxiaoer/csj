@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"./c4"
+	"./c5"
 )
 
 func main() {
@@ -15,6 +16,7 @@ func main() {
 	mux.Handle("/csj/c4/badcodeservlet", &c4.BadCode{})
 	mux.Handle("/csj/c4/submitinsuranceinfo", &c4.SubmitInsuranceInfo{})
 	mux.Handle("/csj/c4/bidservlet", &c4.BidServ{})
+	mux.Handle("/csj/c5/showrequestheaders", &c5.ShowRequestHeaders{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",
