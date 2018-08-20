@@ -1,8 +1,9 @@
 package c5
 
 import (
-	"bytes"
+	//	"bytes"
 	"net/http"
+	"strings"
 
 	"../util"
 )
@@ -39,7 +40,15 @@ func (ls *LongServ) handleGet(w http.ResponseWriter, r *http.Request) (err error
 	//		htm += line
 	//	}
 	//	htm += "</body></html>\n"
-	var b bytes.Buffer
+	//	var b bytes.Buffer
+	//	b.WriteString(htm)
+	//	for i := 0; i < 10000; i++ {
+	//		b.WriteString(line)
+	//	}
+	//	b.WriteString("</body></html>\n")
+
+	//	builder := strings.Builder{}
+	var b strings.Builder
 	b.WriteString(htm)
 	for i := 0; i < 10000; i++ {
 		b.WriteString(line)
@@ -50,7 +59,8 @@ func (ls *LongServ) handleGet(w http.ResponseWriter, r *http.Request) (err error
 		w.Header().Set("Content-Encoding", "gzip")
 		w.Write(util.GetGzipData(b.String()))
 	} else {
-		w.Write(b.Bytes())
+		//		w.Write(b.Bytes())
+		w.Write([]byte(b.String()))
 	}
 
 	return
