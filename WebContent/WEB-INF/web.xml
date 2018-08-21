@@ -131,4 +131,39 @@
   	<url-pattern>/c5/longservlet</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>BrowserInsult</servlet-name>
+  	<servlet-class>c5.BrowserInsult</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BrowserInsult</servlet-name>
+  	<url-pattern>/c5/browserinsult</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>WrongDestination</servlet-name>
+  	<servlet-class>c6.WrongDestination</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>WrongDestination</servlet-name>
+  	<url-pattern>/c6/wrongdestination</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SearchEngines</servlet-name>
+  	<servlet-class>c6.SearchEngines</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SearchEngines</servlet-name>
+  	<url-pattern>/c6/searchengines</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>SearchEngineForm</servlet-name>
+  	<servlet-class>c6.SearchEngineForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SearchEngineForm</servlet-name>
+  	<url-pattern>/c6/searchengineform</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

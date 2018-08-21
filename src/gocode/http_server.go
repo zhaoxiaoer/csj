@@ -6,6 +6,7 @@ import (
 
 	"./c4"
 	"./c5"
+	"./c6"
 )
 
 func main() {
@@ -18,6 +19,10 @@ func main() {
 	mux.Handle("/csj/c4/bidservlet", &c4.BidServ{})
 	mux.Handle("/csj/c5/showrequestheaders", &c5.ShowRequestHeaders{})
 	mux.Handle("/csj/c5/longservlet", &c5.LongServ{})
+	mux.Handle("/csj/c5/browserinsult", &c5.BrowserInsult{})
+	mux.Handle("/csj/c6/wrongdestination", &c6.WrongDestination{})
+	mux.Handle("/csj/c6/searchengineform", &c6.SearchEngineForm{})
+	mux.Handle("/csj/c6/searchengines", &c6.SearchEngines{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",
