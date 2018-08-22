@@ -166,4 +166,13 @@
   	<url-pattern>/c6/searchengineform</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>ApplesAndOranges</servlet-name>
+  	<servlet-class>c7.ApplesAndOranges</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ApplesAndOranges</servlet-name>
+  	<url-pattern>/c7/applesandoranges</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

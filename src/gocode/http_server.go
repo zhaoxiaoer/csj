@@ -7,6 +7,7 @@ import (
 	"./c4"
 	"./c5"
 	"./c6"
+	"./c7"
 )
 
 func main() {
@@ -23,6 +24,7 @@ func main() {
 	mux.Handle("/csj/c6/wrongdestination", &c6.WrongDestination{})
 	mux.Handle("/csj/c6/searchengineform", &c6.SearchEngineForm{})
 	mux.Handle("/csj/c6/searchengines", &c6.SearchEngines{})
+	mux.Handle("/csj/c7/applesandoranges", &c7.ApplesAndOranges{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",
