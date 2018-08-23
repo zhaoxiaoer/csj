@@ -1,5 +1,7 @@
 package util;
 
+import javax.servlet.http.HttpServletRequest;
+
 public class ServletUtilities {
 	public static final String DOCTYPE = "<!DOCTYPE html>\n";
 	public static String headWithTitle(String title) {
@@ -49,5 +51,17 @@ public class ServletUtilities {
 			}
 		}
 		return flag;
+	}
+	
+	public static int getIntParameter(HttpServletRequest req, 
+			String paramName, int defaultValue) {
+		String paramString = req.getParameter(paramName);
+		int paramValue;
+		try {
+			paramValue = Integer.parseInt(paramString);
+		} catch (NumberFormatException nfe) {
+			paramValue = defaultValue;
+		}
+		return paramValue;
 	}
 }

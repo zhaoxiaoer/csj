@@ -175,4 +175,13 @@
   	<url-pattern>/c7/applesandoranges</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>PrimeNumberServlet</servlet-name>
+  	<servlet-class>c7.PrimeNumberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PrimeNumberServlet</servlet-name>
+  	<url-pattern>/c7/primenumberservlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
