@@ -184,4 +184,48 @@
   	<url-pattern>/c7/primenumberservlet</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>RepeatVisitor</servlet-name>
+  	<servlet-class>c8.RepeatVisitor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RepeatVisitor</servlet-name>
+  	<url-pattern>/c8/repeatvisitor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CookieTest</servlet-name>
+  	<servlet-class>c8.CookieTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CookieTest</servlet-name>
+  	<url-pattern>/c8/cookietest</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ClientAccessCount</servlet-name>
+  	<servlet-class>c8.ClientAccessCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ClientAccessCount</servlet-name>
+  	<url-pattern>/c8/clientaccesscount</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RegistrationForm</servlet-name>
+  	<servlet-class>c8.RegistrationForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegistrationForm</servlet-name>
+  	<url-pattern>/c8/registrationform</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>RegistrationServlet</servlet-name>
+  	<servlet-class>c8.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegistrationServlet</servlet-name>
+  	<url-pattern>/c8/registrationservlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
