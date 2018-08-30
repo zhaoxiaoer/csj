@@ -10,7 +10,7 @@ import (
 	"./c7"
 	"./c8"
 	"./c9"
-	//	"github.com/gorilla/context"
+	"github.com/gorilla/context"
 )
 
 func main() {
@@ -36,9 +36,8 @@ func main() {
 	mux.Handle("/csj/c9/showsession", &c9.ShowSession{})
 
 	server := http.Server{
-		Addr: "127.0.0.1:6725",
-		//		Handler: context.ClearHandler(mux),
-		Handler: mux,
+		Addr:    "127.0.0.1:6725",
+		Handler: context.ClearHandler(mux),
 	}
 
 	//	err := server.ListenAndServeTLS("cert.pem", "key.pem")
