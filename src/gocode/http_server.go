@@ -9,6 +9,8 @@ import (
 	"./c6"
 	"./c7"
 	"./c8"
+	"./c9"
+	//	"github.com/gorilla/context"
 )
 
 func main() {
@@ -31,9 +33,11 @@ func main() {
 	mux.Handle("/csj/c8/clientaccesscount", &c8.ClientAccessCount{})
 	mux.Handle("/csj/c8/registrationform", &c8.RegistrationForm{})
 	mux.Handle("/csj/c8/registrationservlet", &c8.RegistrationServlet{})
+	mux.Handle("/csj/c9/showsession", &c9.ShowSession{})
 
 	server := http.Server{
-		Addr:    "127.0.0.1:6725",
+		Addr: "127.0.0.1:6725",
+		//		Handler: context.ClearHandler(mux),
 		Handler: mux,
 	}
 

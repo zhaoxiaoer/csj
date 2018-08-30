@@ -228,4 +228,13 @@
   	<url-pattern>/c8/registrationservlet</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>ShowSession</servlet-name>
+  	<servlet-class>c9.ShowSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowSession</servlet-name>
+  	<url-pattern>/c9/showsession</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
