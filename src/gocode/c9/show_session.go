@@ -28,7 +28,7 @@ func (ss *ShowSession) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 func (ss *ShowSession) handleGet(w http.ResponseWriter,
 	r *http.Request) (err error) {
 	w.Header().Set("Content-Type", "text/html")
-	session := util.GetSession(w, r)
+	session := util.GetSession(r)
 	var heading string
 	var accessCount int
 	var ok bool

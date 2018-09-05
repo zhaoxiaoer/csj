@@ -237,4 +237,38 @@
   	<url-pattern>/c9/showsession</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>ShowItems</servlet-name>
+  	<servlet-class>c9.ShowItems</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowItems</servlet-name>
+  	<url-pattern>/c9/showitems</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>KidsBooksPage</servlet-name>
+  	<servlet-class>c9.KidsBooksPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>KidsBooksPage</servlet-name>
+  	<url-pattern>/c9/kidsbookspage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>TechBooksPage</servlet-name>
+  	<servlet-class>c9.TechBooksPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TechBooksPage</servlet-name>
+  	<url-pattern>/c9/techbookspage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>OrderPage</servlet-name>
+  	<servlet-class>c9.OrderPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>OrderPage</servlet-name>
+  	<url-pattern>/c9/orderpage</url-pattern>
+  </servlet-mapping>
+
 </web-app>

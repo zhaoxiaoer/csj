@@ -34,6 +34,10 @@ func main() {
 	mux.Handle("/csj/c8/registrationform", &c8.RegistrationForm{})
 	mux.Handle("/csj/c8/registrationservlet", &c8.RegistrationServlet{})
 	mux.Handle("/csj/c9/showsession", &c9.ShowSession{})
+	mux.Handle("/csj/c9/showitems", &c9.ShowItems{})
+	mux.Handle("/csj/c9/kidsbookspage", c9.NewKidsBooksPage())
+	mux.Handle("/csj/c9/techbookspage", c9.NewTechBooksPage())
+	mux.Handle("/csj/c9/orderpage", &c9.OrderPage{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",

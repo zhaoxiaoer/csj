@@ -12,11 +12,11 @@ type MyHttpSession struct {
 	*sessions.Session
 }
 
-func GetSession(w http.ResponseWriter, r *http.Request) *MyHttpSession {
+func GetSession(r *http.Request) *MyHttpSession {
 	session, _ := store.Get(r, "JSESSIONID")
 	session.Options = &sessions.Options{
 		Path:     "/csj",
-		MaxAge:   30,
+		MaxAge:   1800,
 		HttpOnly: true,
 	}
 	return &MyHttpSession{session}
