@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"./c10"
+	"./c11"
 	"./c4"
 	"./c5"
 	"./c6"
@@ -40,6 +41,7 @@ func main() {
 	mux.Handle("/csj/c9/techbookspage", c9.NewTechBooksPage())
 	mux.Handle("/csj/c9/orderpage", &c9.OrderPage{})
 	mux.Handle("/csj/c10/OrderConfirmation.tpl", &c10.OrderConfirmation{})
+	mux.Handle("/csj/c11/Expressions.jsp", &c11.Expressions{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",
