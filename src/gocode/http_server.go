@@ -42,6 +42,9 @@ func main() {
 	mux.Handle("/csj/c9/orderpage", &c9.OrderPage{})
 	mux.Handle("/csj/c10/OrderConfirmation.tpl", &c10.OrderConfirmation{})
 	mux.Handle("/csj/c11/Expressions.jsp", &c11.Expressions{})
+	mux.Handle("/csj/c11/ThreeParams.jsp", &c11.ThreeParams{})
+	mux.Handle("/csj/c11/BGColor.jsp", &c11.BGColor{})
+	mux.Handle("/csj/c11/AccessCounts.jsp", &c11.AccessCounts{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",
