@@ -6,6 +6,7 @@ import (
 
 	"./c10"
 	"./c11"
+	"./c12"
 	"./c4"
 	"./c5"
 	"./c6"
@@ -45,6 +46,7 @@ func main() {
 	mux.Handle("/csj/c11/ThreeParams.jsp", &c11.ThreeParams{})
 	mux.Handle("/csj/c11/BGColor.jsp", &c11.BGColor{})
 	mux.Handle("/csj/c11/AccessCounts.jsp", &c11.AccessCounts{})
+	mux.Handle("/csj/c12/ImportAttribute.jsp", &c12.ImportAttribute{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",

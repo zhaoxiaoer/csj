@@ -61,6 +61,4 @@ func (ex *Expressions) handleGet(w http.ResponseWriter,
 		TestParam:  r.FormValue("testParam"),
 	}
 	return t.Execute(w, data)
-
-	return
 }
