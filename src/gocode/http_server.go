@@ -8,6 +8,7 @@ import (
 	"./c11"
 	"./c12"
 	"./c13"
+	"./c14"
 	"./c4"
 	"./c5"
 	"./c6"
@@ -49,6 +50,13 @@ func main() {
 	mux.Handle("/csj/c11/AccessCounts.jsp", &c11.AccessCounts{})
 	mux.Handle("/csj/c12/ImportAttribute.jsp", &c12.ImportAttribute{})
 	mux.Handle("/csj/c13/WhatsNew.jsp", &c13.WhatsNew{})
+	mux.Handle("/csj/c14/StringBean.jsp", &c14.StringBean{})
+	mux.Handle("/csj/c14/SaleEntry1-Form.jsp", &c14.SaleEntry1Form{})
+	mux.Handle("/csj/c14/SaleEntry1.jsp", &c14.SaleEntry1{})
+	mux.Handle("/csj/c14/BakedBeanDisplay-page.jsp", &c14.BakedBeanDisplayPage{})
+	mux.Handle("/csj/c14/BakedBeanDisplay-request.jsp", &c14.BakedBeanDisplayRequest{})
+	mux.Handle("/csj/c14/BakedBeanDisplay-session.jsp", &c14.BakedBeanDisplaySession{})
+	mux.Handle("/csj/c14/BakedBeanDisplay-application.jsp", &c14.BakedBeanDisplayApplication{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",
