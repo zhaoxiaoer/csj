@@ -270,5 +270,14 @@
   	<servlet-name>OrderPage</servlet-name>
   	<url-pattern>/c9/orderpage</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ShowBalance</servlet-name>
+  	<servlet-class>c15.ShowBalance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowBalance</servlet-name>
+    <url-pattern>/c15/showbalance</url-pattern>
+  </servlet-mapping>
 
 </web-app>
