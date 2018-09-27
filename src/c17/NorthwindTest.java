@@ -6,8 +6,8 @@ public class NorthwindTest {
 	public static void main(String[] args) {
 		String driver = "com.mysql.cj.jdbc.Driver";
 		String url = "jdbc:mysql://127.0.0.1:3306/ztest";
-		String username = "";
-		String password = "";
+        String username = "";
+        String password = "";
 		
 		showEmployeeTable(driver, url, username, password);
 	}

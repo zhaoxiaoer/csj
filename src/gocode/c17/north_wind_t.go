@@ -1,4 +1,5 @@
-package main
+//package main
+package c17
 
 import (
 	"database/sql"
@@ -7,7 +8,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func main() {
+func main1() {
 	url := "root:123456@tcp(127.0.0.1:3306)/ztest"
 	db, err := sql.Open("mysql", url)
 	if err != nil {

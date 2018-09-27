@@ -279,5 +279,14 @@
     <servlet-name>ShowBalance</servlet-name>
     <url-pattern>/c15/showbalance</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>NorthwindServlet</servlet-name>
+  	<servlet-class>c17.NorthwindServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>NorthwindServlet</servlet-name>
+  	<url-pattern>/c17/northwindservlet</url-pattern>
+  </servlet-mapping>
 
 </web-app>

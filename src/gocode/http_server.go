@@ -10,6 +10,7 @@ import (
 	"./c13"
 	"./c14"
 	"./c15"
+	"./c17"
 	"./c4"
 	"./c5"
 	"./c6"
@@ -59,6 +60,7 @@ func main() {
 	mux.Handle("/csj/c14/BakedBeanDisplay-session.jsp", &c14.BakedBeanDisplaySession{})
 	mux.Handle("/csj/c14/BakedBeanDisplay-application.jsp", &c14.BakedBeanDisplayApplication{})
 	mux.Handle("/csj/c15/showbalance", &c15.ShowBalance{})
+	mux.Handle("/csj/c17/northwindservlet", &c17.Northwind{})
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",
