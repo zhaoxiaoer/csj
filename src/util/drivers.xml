@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drivers>
+  <driver>
+    <vendor>MSACCESS</vendor>
+    <description>MS Access</description>
+    <driver-class>sun.jdbc.odbc.JdbcOdbcDriver</driver-class>
+    <url>jdbc:odbc:[$dbName]</url>
+  </driver>
+  <driver>
+    <vendor>MYSQL</vendor>
+    <description>MySQL Connector/J 3.0</description>
+    <driver-class>com.mysql.jdbc.Driver</driver-class>
+    <url>jdbc:mysql://[$host]:3306/[$dbName]</url>
+  </driver>
+  <driver>
+    <vendor>ORACLE</vendor>
+    <description>Oracle</description>
+    <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+    <url>jdbc:oracle:thin:@[$host]:1521:[$dbName]</url>
+  </driver>
+</drivers>
