@@ -288,5 +288,22 @@
   	<servlet-name>NorthwindServlet</servlet-name>
   	<url-pattern>/c17/northwindservlet</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>v2_TestServlet1</servlet-name>
+  	<servlet-class>v2c2.TestServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>v2_TestServlet1</servlet-name>
+  	<url-pattern>/v2c2/TestServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>v2_TestServlet1</servlet-name>
+  	<url-pattern>/v2c2/TestServlet1/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>v2_TestServlet1</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
 
 </web-app>
