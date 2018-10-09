@@ -64,8 +64,9 @@ func main() {
 	mux.Handle("/csj/c17/northwindservlet", &c17.Northwind{})
 
 	// volume 2
-	mux.Handle("/csj/v2c2/TestServlet1", &v2c2.TServlet1{})
-	mux.Handle("/csj/v2c2/", &v2c2.TServlet2{})
+	tServlet1 := v2c2.NewTServlet1()
+	mux.Handle("/csj/v2c2/TestServlet1", tServlet1)
+	mux.Handle("/csj/v2c2/", tServlet1)
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",

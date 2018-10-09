@@ -5,6 +5,16 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 
 public class TestServlet1 extends HttpServlet {
+	private String firstName = "First name is missing.";
+	
+	public void init() {
+		ServletConfig config = getServletConfig();
+		if (config.getInitParameter("firstName") != null) {
+			firstName = config.getInitParameter("firstName");
+			System.out.println("firstName: " + firstName);
+		}
+	}
+	
 	public void doGet(HttpServletRequest request, 
 					HttpServletResponse response) 
 					throws ServletException, IOException {
@@ -19,6 +29,7 @@ public class TestServlet1 extends HttpServlet {
 				"<body bgcolor=\"#FDF5E6\">\n" +
 				"<h2>" + "Servlet Name: Test1" + "</h2>\n" +
 				"<h2>URI: " + uri + "</h2>\n" +
+				"<h2>firstName: " + firstName + "</h2>\n" +
 				"</body>\n" +
 				"</html>");
 	}

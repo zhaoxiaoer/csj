@@ -292,6 +292,10 @@
   <servlet>
   	<servlet-name>v2_TestServlet1</servlet-name>
   	<servlet-class>v2c2.TestServlet1</servlet-class>
+  	<init-param>
+  	  <param-name>firstName</param-name>
+  	  <param-value>zhao</param-value>
+  	</init-param>
   </servlet>
   <servlet-mapping>
   	<servlet-name>v2_TestServlet1</servlet-name>
