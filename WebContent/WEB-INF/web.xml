@@ -289,6 +289,8 @@
   	<url-pattern>/c17/northwindservlet</url-pattern>
   </servlet-mapping>
   
+  <!-- Volume 2 -->
+  
   <servlet>
   	<servlet-name>v2_TestServlet1</servlet-name>
   	<servlet-class>v2c2.TestServlet1</servlet-class>
@@ -309,5 +311,10 @@
   	<servlet-name>v2_TestServlet1</servlet-name>
   	<url-pattern>*.do</url-pattern>
   </servlet-mapping>
+  
+  <context-param>
+  	<param-name>support-email</param-name>
+  	<param-value>zhao@example.com</param-value>
+  </context-param>
 
 </web-app>

@@ -6,12 +6,18 @@ import javax.servlet.http.*;
 
 public class TestServlet1 extends HttpServlet {
 	private String firstName = "First name is missing.";
+	private String supportEmail = "Support Email is missing";
 	
 	public void init() {
 		ServletConfig config = getServletConfig();
 		if (config.getInitParameter("firstName") != null) {
 			firstName = config.getInitParameter("firstName");
-			System.out.println("firstName: " + firstName);
+//			System.out.println("firstName: " + firstName);
+		}
+		
+		ServletContext context = getServletContext();
+		if (context.getInitParameter("support-email") != null) {
+			supportEmail = context.getInitParameter("support-email");
 		}
 	}
 	
@@ -30,6 +36,7 @@ public class TestServlet1 extends HttpServlet {
 				"<h2>" + "Servlet Name: Test1" + "</h2>\n" +
 				"<h2>URI: " + uri + "</h2>\n" +
 				"<h2>firstName: " + firstName + "</h2>\n" +
+				"<h2>Support Email: " + supportEmail + "</h2>\n" +
 				"</body>\n" +
 				"</html>");
 	}
