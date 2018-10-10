@@ -9,6 +9,7 @@ public class TestServlet1 extends HttpServlet {
 	private String supportEmail = "Support Email is missing";
 	
 	public void init() {
+		System.out.println("TestServlet1 init");
 		ServletConfig config = getServletConfig();
 		if (config.getInitParameter("firstName") != null) {
 			firstName = config.getInitParameter("firstName");

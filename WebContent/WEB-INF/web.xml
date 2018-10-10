@@ -298,6 +298,7 @@
   	  <param-name>firstName</param-name>
   	  <param-value>zhao</param-value>
   	</init-param>
+  	<load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
   	<servlet-name>v2_TestServlet1</servlet-name>
