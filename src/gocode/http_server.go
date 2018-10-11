@@ -66,7 +66,8 @@ func main() {
 	// volume 2
 	tServlet1 := v2c2.NewTServlet1()
 	mux.Handle("/csj/v2c2/TestServlet1", tServlet1)
-	mux.Handle("/csj/v2c2/", tServlet1)
+	//	mux.Handle("/csj/v2c2/", tServlet1)
+	mux.Handle("/csj/v2c2/", v2c2.Reporter(tServlet1))
 
 	server := http.Server{
 		Addr:    "127.0.0.1:6725",

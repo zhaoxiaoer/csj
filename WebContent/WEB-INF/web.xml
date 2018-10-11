@@ -317,5 +317,14 @@
   	<param-name>support-email</param-name>
   	<param-value>zhao@example.com</param-value>
   </context-param>
+  
+  <filter>
+  	<filter-name>Reporter</filter-name>
+  	<filter-class>v2c2.ReportFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>Reporter</filter-name>
+  	<servlet-name>v2_TestServlet1</servlet-name>
+  </filter-mapping>
 
 </web-app>
