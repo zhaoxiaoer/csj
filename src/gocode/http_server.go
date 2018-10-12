@@ -23,8 +23,8 @@ import (
 
 func main() {
 	mux := http.NewServeMux()
-	//	files := http.FileServer(http.Dir("../../WebContent"))
-	//	mux.Handle("/csj/", http.StripPrefix("/csj/", files))
+	files := http.FileServer(http.Dir("../../WebContent"))
+	mux.Handle("/csj/", v2c2.SetSpecialMIME(http.StripPrefix("/csj/", files)))
 	mux.Handle("/csj/c4/submitresume", &c4.SubmitResume{})
 	mux.Handle("/csj/c4/badcodeservlet", &c4.BadCode{})
 	mux.Handle("/csj/c4/submitinsuranceinfo", &c4.SubmitInsuranceInfo{})
@@ -67,7 +67,7 @@ func main() {
 	tServlet1 := v2c2.NewTServlet1()
 	mux.Handle("/csj/v2c2/TestServlet1", tServlet1)
 	//	mux.Handle("/csj/v2c2/", tServlet1)
-	mux.Handle("/csj/v2c2/", v2c2.Reporter(tServlet1))
+	//	mux.Handle("/csj/v2c2/", v2c2.Reporter(tServlet1))
 	mux.Handle("/", &v2c2.NotFound{})
 
 	server := http.Server{

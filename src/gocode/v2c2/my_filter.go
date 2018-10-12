@@ -2,9 +2,15 @@ package v2c2
 
 import (
 	"fmt"
+	"mime"
 	"net/http"
+	"path"
 	"time"
 )
+
+func init() {
+	mime.AddExtensionType(".foo", "application/x-fubar")
+}
 
 func Reporter(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -18,5 +24,17 @@ func Reporter(h http.Handler) http.Handler {
 
 		// 执行handler后的逻辑
 		// ...
+	})
+}
+
+func SetSpecialMIME(h http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// 设置自定义MIME
+		m := mime.TypeByExtension(path.Ext(r.URL.Path))
+		if m != "" {
+			w.Header().Set("Content-Type", m)
+		}
+
+		h.ServeHTTP(w, r)
 	})
 }
