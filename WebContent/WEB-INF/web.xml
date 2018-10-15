@@ -341,4 +341,8 @@
   	<mime-type>application/x-fubar</mime-type>
   </mime-mapping>
 
+  <listener>
+  	<listener-class>v2c2.ContextReporter</listener-class>
+  </listener>
+
 </web-app>
